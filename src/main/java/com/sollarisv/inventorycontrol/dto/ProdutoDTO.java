@@ -7,7 +7,10 @@ public class ProdutoDTO {
 	private String idProd;
 	private String nomeProd;
 	private String codigoProd;
+	private int totalEstoque;
 	
+	
+
 	public ProdutoDTO() {
 		
 	}
@@ -16,6 +19,7 @@ public class ProdutoDTO {
 		idProd = obj.getIdProd();
 		nomeProd = obj.getNomeProd();
 		codigoProd = obj.getCodigoProd();
+		totalEstoque = obj.getTotalEstoque();
 	}
 
 	public String getIdProd() {
@@ -44,6 +48,13 @@ public class ProdutoDTO {
 		this.codigoProd = codigoProd;
 	}
 	
+	public int getTotalEstoque() {
+		return totalEstoque;
+	}
+
+	public void setTotalEstoque(int totalEstoque) {
+		this.totalEstoque = totalEstoque;
+	}
 	
 
 }

@@ -12,16 +12,19 @@ public class Produto {
 	private String idProd;
 	private String nomeProd;
 	private String codigoProd;
+	private int totalEstoque;
+	
 	
 	public Produto() {
 		
 	}
 
-	public Produto(String idProd, String nomeProd, String codigoProd) {
+	public Produto(String idProd, String nomeProd, String codigoProd, int totalEstoque) {
 		super();
 		this.idProd = idProd;
 		this.nomeProd = nomeProd;
 		this.codigoProd = codigoProd;
+		this.totalEstoque = totalEstoque;
 	}
 
 	public String getIdProd() {
@@ -47,6 +50,15 @@ public class Produto {
 	public void setCodigoProd(String codigoProd) {
 		this.codigoProd = codigoProd;
 	}
+	
+	public int getTotalEstoque() {
+		return totalEstoque;
+	}
+
+	public void setTotalEstoque(int totalEstoque) {
+		this.totalEstoque = totalEstoque;
+	}
+
 
 	@Override
 	public int hashCode() {

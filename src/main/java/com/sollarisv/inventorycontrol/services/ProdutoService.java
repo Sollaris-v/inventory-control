@@ -36,7 +36,7 @@ public class ProdutoService {
 	}
 	
 	public Produto fromDTO(ProdutoDTO objDto) {
-		return new Produto(objDto.getIdProd(), objDto.getNomeProd(), objDto.getCodigoProd());
+		return new Produto(objDto.getIdProd(), objDto.getNomeProd(), objDto.getCodigoProd(), objDto.getTotalEstoque());
 	}
 	
 	public Produto update(Produto obj) {
